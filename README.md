@@ -42,19 +42,30 @@ RegisterNumber: 212222110043
 HALF SUBTRACTOR:
 
 module halfsubractor(A,B,Diff,Borrow);
+
 input A,B;
+
 output Diff,Borrow;
+
 assign Diff = (A ^ B);
+
 assign Borrow = (~A & B);
+
 endmodule
+
 
 FULL SUBTRACTOR:
 
 module fullsubtractor(A,B,C,diff,borrow);
+
 input A,B,C;
+
 output diff,borrow;
+
 assign diff = (A^B^C);
+
 assign borrow = (~A&(B^C)|(B&C));
+
 endmodule
 
 ## Output:
