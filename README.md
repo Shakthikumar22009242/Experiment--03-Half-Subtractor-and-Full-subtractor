@@ -54,6 +54,7 @@ assign Borrow = (~A & B);
 endmodule
 
 
+
 FULL SUBTRACTOR:
 
 module fullsubtractor(A,B,C,diff,borrow);
